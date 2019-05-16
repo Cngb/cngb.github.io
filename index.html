@@ -1,0 +1,17 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>美味学院</title><script>(function(doc, win) {
+				var docEl = doc.documentElement,
+				resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+				recalc = function() {
+					var clientWidth = docEl.clientWidth;
+					if(!clientWidth) return;
+					// 默认设计图为750的情况下1rem=100px；根据自己需求修改
+					if(clientWidth >= 750) {
+						docEl.style.fontSize = '100px';
+					} else {
+						docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+					}
+				};
+				if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);			
+			})(document, window);</script><link rel="shortcut icon" href=./favicon.ico><link href=./static/css/app.68541a222d8d7d915a868ae9050304c7.css rel=stylesheet></head><body><div id=mwxy></div><script type=text/javascript src=./static/js/manifest.3ad1d5771e9b13dbdad2.js></script><script type=text/javascript src=./static/js/vendor.c4a11c7241461423064f.js></script><script type=text/javascript src=./static/js/app.ed6db4e1b0034818afdc.js></script></body></html>
